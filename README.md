@@ -11,7 +11,4 @@ This is a simple GitHub bot that **automatically updates a JSON file (`metrics.j
 - Commits and pushes the updated file back to the repository automatically.
 - Runs **daily at 9:00 AM Afghanistan time** (4:30 AM UTC).
 
----
-
-## 🗂File Structure
 
