@@ -1,0 +1,32 @@
+name: Daily Auto Commit
+
+on:
+  schedule:
+    - cron: "30 4 * * *"  # اجرای هر روز ساعت 9 صبح افغانستان
+  workflow_dispatch:       # برای اجرای دستی هم قابل استفاده است
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Run Python script
+        run: python update_metrics.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "Mary Bot"
+          git config user.email "mary@example.com"
+          git add metrics.json
+          git commit -m "🤖 Daily metrics update"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
