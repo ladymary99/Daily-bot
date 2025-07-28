@@ -3,6 +3,9 @@ import json
 filename = "metrics.json"
 
 with open(filename, "r") as f:
+
+
+    
     data = json.load(f)
 
 for key in data:
