@@ -1,6 +1,6 @@
 # Daily Metrics Bot
 
-This is a simple GitHub bot that **automatically updates a JSON file (`metrics.json`) every day** by incrementing three numeric values. The process is fully automated using **GitHub Actions** and requires no manual execution.
+This is a simple GitHub bot that **automatically updates a JSON file (`#1`) every day** by incrementing three numeric values. The process is fully automated using **GitHub Actions** and requires no manual execution.
 
 ---
 
