@@ -15,3 +15,4 @@ This is a simple GitHub bot that **automatically updates a JSON file (`#1`) ever
   #13
   #14
   #15
+  #16
