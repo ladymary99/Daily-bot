@@ -28,3 +28,4 @@ This is a simple GitHub bot that **automatically updates a JSON file (`#1`) ever
   #26
 
   #28
+  #29
